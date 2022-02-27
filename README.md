@@ -7,6 +7,10 @@ Spring term 2022. Start date: 13-02-2022
 
 ### **What is Dart?**
 
+<p align="center">
+    ![image](https://user-images.githubusercontent.com/69509154/155894883-09a305c4-c566-451c-a5c6-87ea41d7b91f.png)
+</p>
+
 **The Dart language** is an open-source, general-purposem object-oriented programming language optimized for quickly building apps. Dart’s compiler technology supports building both desktop software, and mobile or web apps in cross-platform environment. Dart is the foudational language for Flutter, a fast-growing UI-development framework backed by Google. 
 
 Official web page: [https://dart.dev/](https://dart.dev/)
