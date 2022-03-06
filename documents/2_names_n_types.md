@@ -214,7 +214,7 @@ print("Mixed operation: ${(3 << 3) + 15}"); // Mixed operation: 39
 
 According to the list provided by Dart’s official documentation (assessed on 6th Mar 22), Dart has 63 reserved keywords. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da26eb94-7e8e-4c82-b4c4-352f00991dcd/Untitled.png)
+![image](https://user-images.githubusercontent.com/69509154/156923788-31b2bc54-6a70-4200-bcb1-9c69f0eefc18.png)
 
 The sort page can be found [here](https://dart.dev/guides/language/language-tour#keywords).
 
