@@ -1,3 +1,9 @@
+void main() {
+  data_type();
+  operations();
+  language_type();
+}
+
 void data_type() {
   // general data declaring
   var name = 'Ngoc Long'; //string
@@ -76,10 +82,4 @@ void language_type() {
   late int age;
   age = 13;
   print("age: $age"); // age: 13
-}
-
-void main() {
-  data_type();
-  operations();
-  language_type();
 }
