@@ -10,3 +10,4 @@ Spring term 2022. Start date: 13-02-2022
 My researchs in order on Dart language:
 1. [Language overview & Getting started](https://github.com/tnlong311/dart-cs308/blob/main/documents/1_overview.md)
 2. [Names, Types and Binding](https://github.com/tnlong311/dart-cs308/blob/main/documents/2_names_n_types.md)
+3. [Selection Control Structures](https://github.com/tnlong311/dart-cs308/blob/main/documents/3_selection_controls.md)
