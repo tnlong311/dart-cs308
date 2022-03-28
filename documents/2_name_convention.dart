@@ -56,9 +56,30 @@ void operations() {
 
   int numasdfSSSDEEXX___10 = 100;
   print("very ugly name = $numasdfSSSDEEXX___10");
+
+  print("Mixed operation: ${(3 << 3) + 15}"); // Mixed operation: 39
+}
+
+void language_type() {
+  // const name1; //illegal, must be assigned to a value
+  const name2 = 123; // ok
+
+  print("name2: $name2"); //ok
+
+  final name3; // ok
+
+  // print("name3: $name3"); // illegal, must have a value when being called
+
+  name3 = "hello";
+  print("name3: $name3"); // ok
+
+  late int age;
+  age = 13;
+  print("age: $age"); // age: 13
 }
 
 void main() {
   data_type();
   operations();
+  language_type();
 }
