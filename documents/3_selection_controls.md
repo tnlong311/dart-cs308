@@ -1,4 +1,8 @@
-### Table of contents
+# PLP 3-Selection Control Structures
+
+<br />
+
+## Table of contents
 
 0. [Code source](https://github.com/tnlong311/dart-cs308/blob/main/documents/3_selection_control_statement.dart)
 1. [Boolean data type](#data-types)
@@ -14,7 +18,7 @@
 
 <br />
 
-### Boolean data type <a name="data-types"></a>
+## Boolean data type <a name="data-types"></a>
 
 In Dart, the keyword `bool` is used to defined a variable with data type of boolean. `bool` takes only two values: `true` and `false`. 
 
@@ -46,9 +50,9 @@ In other words, `bool` accept **only** `true` or `false` as its values.
 
 <br />
 
-### Conditional statements <a name="conditions"></a>
+## Conditional statements <a name="conditions"></a>
 
-**The if-else statements**
+### The if-else statements
 
 Similar to other common languages, Dart provides the basic conditional statement with `if ... else` keywords.
 
@@ -102,7 +106,7 @@ if (num >= 10) {
 ```
 <br />
 
-**Ternary operator**
+### Ternary operator
 
 Dart introduces a very useful conditional operator using the `?` keyword. The syntax is as follows:
 
@@ -128,7 +132,7 @@ int num3 = 100;
 
 <br />
 
-**Null-check operator**
+### Null-check operator
 
 A slightly modified version of the ternary operator is the operator `??`. The syntax is as follows:
 
@@ -153,7 +157,7 @@ print("str2: " + str2);
 
 <br />
 
-**Switch-case statement**
+### Switch-case statement
 
 The switch-case checks whether a variable matches with all case expressions. The syntax is as follows:
 
@@ -200,9 +204,9 @@ Note that in Dart, we must use the keyword `break` at the end of each `case` blo
 
 <br />
 
-### More examples of conditional statements <a name="examples"></a>
+## More examples of conditional statements <a name="examples"></a>
 
-**Multi-condition if-else statement**
+### Multi-condition if-else statement
 
 Dart supports multiple conditions in one conditional block. The “or” conditional bridge with `||` and the “and” with `&&`
 
@@ -221,7 +225,7 @@ if (num2 > 4 || num2 < 10) {
 
 <br />
 
-**Nested if-else statement**
+### Nested if-else statement
 
 Another if-else statement can be put into a conditional block. For example:
 
@@ -242,7 +246,7 @@ if (true) {
 
 <br />
 
-### Dangling else problem <a name="dangling-else"></a>
+## Dangling else problem <a name="dangling-else"></a>
 
 The dangling else problem, or dangling else ambiguity, is a common bad-coding practice when implementing several if-else statements.
 
@@ -299,7 +303,7 @@ The code will check the first `if`, then increment num by 1. Then it goes to the
 
 <br />
 
-### Short circuit <a name="short-circuit"></a>
+## Short circuit <a name="short-circuit"></a>
 
 Dart uses short circuit evaluation with conditional statements. This happends when the program only checks some parts of the multi condition inside the `if` statement.
 
@@ -350,6 +354,6 @@ if (func1() || func2()) {
 
 <br />
 
-### References <a name="references"></a>
+## References <a name="references"></a>
 
 (1) Geeksforgeek, “Dangling-else Ambiguity”, last retrieved on 28th March 2022,  [https://www.geeksforgeeks.org/dangling-else-ambiguity/](https://www.geeksforgeeks.org/dangling-else-ambiguity/)
