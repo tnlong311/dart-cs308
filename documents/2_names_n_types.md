@@ -14,6 +14,10 @@
 7. [Restrictions](#restrictions)
 8. [References](#references)
 
+
+<br />
+
+
 ## Basic data types  <a name="data-types"></a>
 
 ### Declaration
