@@ -1,3 +1,7 @@
+# PLP1 - History and Hello World
+
+<br />
+
 ## Table of Contents
 0. [Code source](https://github.com/tnlong311/dart-cs308/blob/main/documents/1_hello.dart)
 1. [Language overview](#overview)
@@ -12,17 +16,23 @@
     <img src="https://user-images.githubusercontent.com/69509154/155894883-09a305c4-c566-451c-a5c6-87ea41d7b91f.png">
 </p>
 
+<br />
+
 ### **What is Dart?**
 
 **The Dart language** is an open-source, general-purposem object-oriented programming language optimized for quickly building apps. Dart’s compiler technology supports building both desktop software, and mobile or web apps in cross-platform environment. Dart is the foudational language for Flutter, a fast-growing UI-development framework backed by Google. 
 
 Official web page: [https://dart.dev/](https://dart.dev/)
 
+<br />
+
 ### **Establishment history**
 
 Dart was first introduced in the GOTO conference on October 2010, at Denmark. The founders of Dart were Lars Bak and Kasper Lund, both of whom were  Danish programmers known for their work on virtual machines [(1)](#1).
 
 Dart 1.0 was officially released on 14th November 2013 [(2)](#2). Five years later, the next version, Dart 2.0, was announced on 21th Jully 2018, on the same year with the release of Flutter, Dart’s most used toolkit [(3)](#3). The lastest version of the language is Dart 2.1.6. It is announced to fix several bugs and improve platform handling that its packages are currently suporting [(4)](#4).
+
+<br />
 
 ### What is Dart used for?
 
@@ -35,6 +45,8 @@ In other words, Dart runs in multiple and cross platforms. This flexibility is t
 
 Because Dart is a programming language, it is applied by Flutter framework to build UI for a huge numbers of mobile and web apps. A showcase of applications of Dart and Flutter can be found [here](https://flutter.dev/showcase). 
 
+<br />
+
 ### Where to get information on Dart?
 
 Dart has a well-written and detailed documentation on its official page. Every information on the language’s syntax can be found here. To have an initial idea of what Dart is, you can view the [Overview](https://dart.dev/overview) or [Language tour](https://dart.dev/guides/language/language-tour) pages.
@@ -42,6 +54,8 @@ Dart has a well-written and detailed documentation on its official page. Every i
 Since Dart is an open-source programming language, you can go to their Github repository to have a more in-dept knowledge of how the language is built. Their open-source community is also a good place to give suggestions and raise issues. 
 
 In addition, Dart is well-known and fast-growing together with the trend of multiple-platform apps. Thus, information on Dart can be found widely online, including Youtube turtorials, articles, Stackoverflow or online courses. 
+
+<br />
 
 ### Helpful links
 
@@ -116,6 +130,8 @@ Here are the steps to set up the required environment:
 Now Visual Studio Code is all set to write and run Dart programs! The process is just as simple as that!
 
 If you choose any IDE that does not include Dart intergration, please install Dart SDK directly on your computer. Detailed turtorial can be found [here.](https://dart.dev/get-dart)
+
+<br />
 
 ### **Write your first "Hello world!" program in Dart**
 

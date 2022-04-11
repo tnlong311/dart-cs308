@@ -1,4 +1,8 @@
-### Table of contents
+# PLP 2 - Names, Types and Binding
+
+<br />
+
+## Table of contents
 
 0. [Code sourse](https://github.com/tnlong311/dart-cs308/blob/main/documents/2_name_convention.dart)
 1. [Basic data types](#data-types)
@@ -10,9 +14,9 @@
 7. [Restrictions](#restrictions)
 8. [References](#references)
 
-### Basic data types  <a name="data-types"></a>
+## Basic data types  <a name="data-types"></a>
 
-#### Declaration
+### Declaration
 
 In Dart, most variables don’t need explicit types. We can declare a general variable using the keyword `var`:
 
@@ -54,7 +58,9 @@ num price3 = 22; // a special type, can be both int and double
 price3 = 10.5; // accepted
 ```
 
-#### Built-in types
+<br />
+
+### Built-in types
 
 Here are the built-in data types in Dart:
 
@@ -77,13 +83,17 @@ Besides, there are special types in Dart:
 - `dynamic`: Indicates that you want to disable static checking. Usually you should use `Object` or `Object?` instead.
 - `void`: Indicates that a value is never used. Often used as a return type.
 
-### Variables <a name="variables"></a>
+<br />
+
+## Variables <a name="variables"></a>
 
 As mentioned above, Dart’s variables can be declared generally using `var` or explicitly using a built-in type keyword.
 
 There are some special cases for variables in Dart.
 
-#### Null value
+<br />
+
+### Null value
 
 If a variable is intitiallized as null, there must be a `?` keyword:
 
@@ -94,7 +104,9 @@ int? edge = null;
 
 There is more to null safety in Dart, which will not be mentioned in scope of this project. View [here](https://dart.dev/codelabs/null-safety) for full documentation. 
 
-#### Late variables
+<br />
+
+### Late variables
 
 The `late` keyword can be used when assigning a value to a non-null variable later in the code:
 
@@ -107,9 +119,11 @@ void main() {
 }
 ```
 
-### Operations <a name="operations"></a>
+<br />
 
-#### Syntax
+## Operations <a name="operations"></a>
+
+### Syntax
 
 Dart supports most commonly operations used in other languages like C, C++ or Javascript. 
 
@@ -131,7 +145,9 @@ These includes:
 
 View the full list of operations [here](https://dart.dev/guides/language/language-tour#operators).
 
-#### Operation experimentation
+<br />
+
+### Operation experimentation
 
 1. add `int` and `double`
 
@@ -200,7 +216,9 @@ int price1 = 1000;
 double price1 = 10.5; // illegal
 ```
 
-#### Mixed operations
+<br />
+
+### Mixed operations
 
 Since Dart has tight date type rules, only a few mixed operations are allowed. 
 
@@ -210,7 +228,9 @@ For instance, we can have a mixed arithmetic and bitwise operations:
 print("Mixed operation: ${(3 << 3) + 15}"); // Mixed operation: 39
 ```
 
-### Reserved keywords <a name="reserved"></a>
+<br />
+
+## Reserved keywords <a name="reserved"></a>
 
 According to the list provided by Dart’s official documentation (assessed on 6th Mar 22), Dart has 63 reserved keywords. 
 
@@ -224,13 +244,17 @@ These words must not be used as identifiers, except for some, which are marked w
 - superscript 2: built-in identifiers - can be used as both identifier and reserved word
 - superscript 3: asynchronous support - cannot be used in identifiers expressed as async function.
 
-### Naming variables <a name="naming"></a>
+<br />
+
+## Naming variables <a name="naming"></a>
 
 There are a handful of factors in Dart language that has different naming requirement and convention, such as Class, Collection, Object, function, variables, comments, files and so on. 
 
 In scope of the project, we only assess naming requirement and convention of Dart variables. 
 
-#### Naming requirement
+<br />
+
+### Naming requirement
 
 Dart’s variables must consist of only `a-z`, `A-Z`, `0-9` or underscore `_`. Any combination of these characters are allowed. 
 
@@ -240,7 +264,9 @@ For example, a variable named as follows is technically legal:
 int numasdfSSSDEEXX___10;
 ```
 
-#### Naming convention
+<br />
+
+### Naming convention
 
 > "Over the past several years, we’ve written a ton of Dart code and learned a lot about what works well and what doesn’t. We’re sharing this with you so you can write consistent, robust, fast code too.”
 > 
@@ -255,9 +281,11 @@ For example:
 var beautifulName3; 
 ```
 
-### Types <a name="types"></a>
+<br />
 
-#### Statically typed
+## Types <a name="types"></a>
+
+### Statically typed
 
 Here is a simple explanation of what stactically typed and dynamically typed means:
 
@@ -270,7 +298,9 @@ As illustrated in the codes above, Dart variables cannot change date type or val
 
 However, Dart does provide dynamic type, using the `dynamic` keyword declaration. Even though the `dynamic` itself is static, meaning a variable is assigned to `dynamic` at the beginning of the compile and cannot change, it allows the variable to adjust during compiling. 
 
-#### Explicitly and implicitly typed 
+<br />
+
+### Explicitly and implicitly typed 
 
 **Dart is both explicitly and implicitly typed language.** As described in the Basic date types part, Dart provides flexibility for variables to be typed either explicitly or implicitly.
 
@@ -279,7 +309,9 @@ int name1; // explicitlly typed
 var name2; // implicitlly typed
 ```
 
-#### Immutability and mutability
+<br />
+
+### Immutability and mutability
 
 Most variables in Dart are immutable when they are created, in the sense that they cannot change their type and values once assigned.
 
@@ -314,7 +346,9 @@ late int age;
   print("age: $age"); // age: 13
 ```
 
-### Restrictions <a name="restrictions"></a>
+<br />
+
+## Restrictions <a name="restrictions"></a>
 
 In summary, Dart has some limitations relating to date types and variables:
 
@@ -322,6 +356,8 @@ In summary, Dart has some limitations relating to date types and variables:
 - Date type converting is prohibited during declarations and operations.
 - Null-safety is strictly implemented.
 
-### References <a name="references"></a>
+<br />
+
+## References <a name="references"></a>
 
 All researchs on the Dart language are referenced from Dart documentation page: [https://dart.dev/guides](https://dart.dev/guides).
