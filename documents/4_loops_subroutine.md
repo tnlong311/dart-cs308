@@ -1,9 +1,6 @@
 # PLP 4 - Loops and Subroutines
 
-"Being able to repeat code through loops and functions (which can be called more than once and sent different information each time) is a huge part of most programming languages.  However, different programming languages have different kinds of loops, and there are a lot of variations in how functions are declared, where they have to be put, how they accept parameters, and how the function output is returned."
-
 <br />
-
 
 ## Table of contents
 
