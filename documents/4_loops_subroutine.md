@@ -136,7 +136,7 @@ while (num < 5) {
 
 ### do...while loop
 
-The `do..while loop` us exactly the same as the basic `while loop`, except that it excutes the code block first, then checks the loop condition later.
+The `do..while loop` is exactly the same as the basic `while loop`, except that it excutes the code block first, then checks the loop condition later.
 
 For example:
 
