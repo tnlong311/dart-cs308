@@ -3,9 +3,10 @@ void main() {
   Male person2 = new Male(12, 169, 'Long');
 
   print(person1.toString());
-  person2.sayHello();
 
-  person2.name = 'Huy';
+  person1.name = 'Huy';
+  person1.sayHello();
+
   person2.sayHello();
 }
 
