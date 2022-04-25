@@ -18,7 +18,7 @@ Dart is an object-oriented programming language. In Dart, class defines an objec
 
 <br />
 
-## Naming
+### Naming
 
 Standardized to other OOP languages, Dart follows `UpperCaseCamel` naming convention for classes.
 
@@ -34,7 +34,7 @@ class Person {
 
 <br />
 
-## Contructor
+### Contructor
 
 The class `Person` is defined with attributes `age, height, name`. We must also define a constructor for it:
 
@@ -85,7 +85,7 @@ class Person {
 
 <br />
 
-## Function
+### Function
 
 An example to declare functions in Dart:
 
@@ -105,7 +105,7 @@ class Person {
 
 <br />
 
-## Standard methods
+### Standard methods
 
 Dart has a few built-in methods. For objects, there is only one standard function, which is `toString()` method. This function is used to return the information of an object.
 
