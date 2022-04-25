@@ -1,9 +1,18 @@
-void main() {}
+void main() {
+  Person person1 = new Person(13, 150, 'An');
+  Male person2 = new Male(12, 169, 'Long');
+
+  print(person1.toString());
+  person2.sayHello();
+
+  person2.name = 'Huy';
+  person2.sayHello();
+}
 
 class Person {
-  var age;
-  var height;
-  var name;
+  int age;
+  int height;
+  String name;
 
   Person(this.age, this.height, this.name);
 
@@ -18,9 +27,13 @@ class Person {
 }
 
 class Male extends Person {
-  var age;
-  var height;
-  var name;
+  int age;
+  int height;
+  String name;
 
-  Male(this.age, this.height, this.name);
+  Male(this.age, this.height, this.name) : super(age, height, name);
+
+  sayHello() {
+    print('Hello, Mr. $name');
+  }
 }
