@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\FUV\\Third\\Spring - Programming Languages\\the_same_world_clone\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\FUV\\Third\\Spring - Programming Languages\\dart-cs308\\the_same_world_clone\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\FUV\\Third\\Spring - Programming Languages\\the_same_world_clone\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\FUV\\Third\\Spring - Programming Languages\\dart-cs308\\the_same_world_clone\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
