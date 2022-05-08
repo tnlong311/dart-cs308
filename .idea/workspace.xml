@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e153bbc1-d612-4d7d-9d1a-05c8bdd62cb8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/the_same_world_clone/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_same_world_clone/lib/view/pages/welcome_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_same_world_clone/lib/view/pages/welcome_page.dart" afterDir="false" />
-    </list>
+    <list default="true" id="e153bbc1-d612-4d7d-9d1a-05c8bdd62cb8" name="Default Changelist" comment="final project initiate" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +45,35 @@
       <option name="presentableId" value="Default" />
       <updated>1652034076999</updated>
     </task>
+    <task id="LOCAL-00001" summary="final project initiate">
+      <created>1652034753804</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652034753804</updated>
+    </task>
+    <task id="LOCAL-00002" summary="final project initiate">
+      <created>1652034805600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652034805600</updated>
+    </task>
+    <task id="LOCAL-00003" summary="final project initiate">
+      <created>1652034841255</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652034841255</updated>
+    </task>
+    <task id="LOCAL-00004" summary="final project initiate">
+      <created>1652034980215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652034980215</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -60,5 +86,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="final project initiate" />
+    <option name="LAST_COMMIT_MESSAGE" value="final project initiate" />
   </component>
 </project>
