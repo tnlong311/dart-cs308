@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e153bbc1-d612-4d7d-9d1a-05c8bdd62cb8" name="Default Changelist" comment="final project initiate" />
+    <list default="true" id="e153bbc1-d612-4d7d-9d1a-05c8bdd62cb8" name="Default Changelist" comment="final project initiate">
+      <change beforePath="$PROJECT_DIR$/the_same_world_clone" beforeDir="false" afterPath="$PROJECT_DIR$/the_same_world_clone" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/the_same_world_clone" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="28tRpGPilcf4P2092qIEGjPKvts" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -73,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652034980215</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="final project initiate">
+      <created>1652035241258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652035241258</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
