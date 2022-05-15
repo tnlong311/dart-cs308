@@ -45,7 +45,7 @@ class _GameplayPageState extends State<GameplayPage> {
       appBar: AppBar(
         title: const Text(
           'action buttons here',
-          style: TextStyle(color: Colors.red),
+          style: TextStyle(color: Colors.white),
         ),
         backgroundColor: Colors.pink,
       ),
