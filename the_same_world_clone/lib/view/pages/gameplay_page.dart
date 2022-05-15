@@ -18,7 +18,11 @@ class _GameplayPageState extends State<GameplayPage> {
   void initState() {
     super.initState();
 
-    GameBoard.getBoardList("1").then((result) {
+    initBoard();
+  }
+
+  void initBoard() async {
+    await GameBoard.getBoardList("1").then((result) {
       setState(() {
         _board = result;
       });
@@ -27,8 +31,12 @@ class _GameplayPageState extends State<GameplayPage> {
     });
   }
 
-  void updateNode() {
+  void updateNode(index) {
+    print(index);
 
+    setState(() {
+      _board.switchColor(index);
+    });
   }
 
   @override
@@ -39,40 +47,50 @@ class _GameplayPageState extends State<GameplayPage> {
           'action buttons here',
           style: TextStyle(color: Colors.red),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.pink,
       ),
-      body: GridView.builder(
-        padding: const EdgeInsets.all(30),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 5,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
+      body: Container(
+        color: Colors.cyan,
+        child: GridView.builder(
+          padding: const EdgeInsets.all(30),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: _board.columns,
+            crossAxisSpacing: 20,
+            mainAxisSpacing: 20,
+          ),
+          itemBuilder: (BuildContext context, index) {
+            return _board.boardList[index] == -1
+                ? SizedBox.shrink()
+                : Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: _board.boardList[index] == 1
+                          ? Colors.black
+                          : Colors.white,
+                      border: Border.all(
+                        color: Colors.black,
+                      ),
+                    ),
+                    child: GestureDetector(
+                      onHorizontalDragUpdate: (details) {
+                        print('$index');
+                      },
+                      onTap: () => updateNode(index),
+                      child: Center(
+                        child: Text(
+                          '$index',
+                          style: TextStyle(
+                            color: _board.boardList[index] == 1
+                                ? Colors.white
+                                : Colors.black,
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+          },
+          itemCount: _board.length,
         ),
-        itemBuilder: (BuildContext context, index) {
-          return Container(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black54,
-              border: Border.all(
-                color: Colors.black,
-              ),
-            ),
-            child: GestureDetector(
-              onHorizontalDragUpdate: (details){
-                print('$index');
-              },
-              child: Center(
-                child: Text(
-                  '$index',
-                  style: const TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ),
-          );
-        },
-        itemCount: 30,
       ),
     );
   }
