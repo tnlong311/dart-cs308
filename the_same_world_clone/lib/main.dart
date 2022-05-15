@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: WelcomePage.routeName,
+      // initialRoute: WelcomePage.routeName,
+      initialRoute: GameplayPage.routeName,
       routes: {
         WelcomePage.routeName: (context) => WelcomePage(),
         GameplayPage.routeName: (context) => GameplayPage(),
