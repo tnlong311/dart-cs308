@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../models/game_board.dart';
+
 class GameplayPage extends StatefulWidget {
   static const routeName = "/gameplay";
 
@@ -10,9 +12,25 @@ class GameplayPage extends StatefulWidget {
 }
 
 class _GameplayPageState extends State<GameplayPage> {
+  late GameBoard _board;
+
+  @override
+  void initState() {
+    super.initState();
+
+    GameBoard.getBoardList("1").then((result) {
+      setState(() {
+        _board = result;
+      });
+
+      print(_board.boardList);
+    });
+  }
+
   void updateNode() {
 
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +58,7 @@ class _GameplayPageState extends State<GameplayPage> {
               ),
             ),
             child: GestureDetector(
-              onPanUpdate: (details){
+              onHorizontalDragUpdate: (details){
                 print('$index');
               },
               child: Center(

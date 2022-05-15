@@ -1,12 +1,12 @@
 class GameNode {
-  final int xPosition;
-  final int yPosition;
-  final bool isVisible;
+  final bool _isVisible;
   bool _isBlack;
 
-  GameNode(this.xPosition, this.yPosition, this.isVisible, this._isBlack);
+  GameNode(this._isVisible, this._isBlack);
 
   bool get isBlack => _isBlack;
+
+  bool get isVisible => _isVisible;
 
   void switchColor() {
     _isBlack = !_isBlack;
