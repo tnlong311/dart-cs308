@@ -37,6 +37,18 @@ class GameBoard {
       _boardList[index] = 1;
     } else if (_boardList[index] == 1) {
       _boardList[index] = 0;
+    } else if (_boardList[index] == 2) {
+      _boardList[index] = 3;
+    } else if (_boardList[index] == 3) {
+      _boardList[index] = 2;
+    }
+  }
+
+  void removeBeginNode(int index) {
+    if (_boardList[index] == 2) {
+      _boardList[index] = 0;
+    } else if (_boardList[index] == 3) {
+      _boardList[index] = 1;
     }
   }
 
@@ -53,5 +65,14 @@ class GameBoard {
     }
 
     return (ones == 0 || zeros == 0);
+  }
+
+  bool checkGameFinished() {
+    for (int num in _boardList) {
+      if (num > 1) {
+        return false;
+      }
+    }
+    return true;
   }
 }
