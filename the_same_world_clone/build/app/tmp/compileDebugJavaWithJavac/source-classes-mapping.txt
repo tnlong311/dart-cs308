@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/mobile/the_same_world_clone/BuildConfig.java
- com.mobile.the_same_world_clone.BuildConfig
