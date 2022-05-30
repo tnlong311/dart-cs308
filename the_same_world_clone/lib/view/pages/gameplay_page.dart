@@ -7,13 +7,16 @@ import '../widgets/game_node.dart';
 class GameplayPage extends StatefulWidget {
   static const routeName = "/gameplay";
 
-  const GameplayPage({Key? key}) : super(key: key);
+  const GameplayPage({Key? key, this.level}) : super(key: key);
+
+  final String? level;
 
   @override
   State<GameplayPage> createState() => _GameplayPageState();
 }
 
 class _GameplayPageState extends State<GameplayPage> {
+  static const padding = 10.0;
   late GameBoard _board;
 
   bool _gameDone = false;
@@ -25,11 +28,11 @@ class _GameplayPageState extends State<GameplayPage> {
   void initState() {
     super.initState();
 
-    initBoard();
+    initBoard(widget.level);
   }
 
-  void initBoard() async {
-    await GameBoard.getBoardList("1").then((result) {
+  void initBoard(level) async {
+    await GameBoard.getBoardList(level).then((result) {
       setState(() {
         _board = result;
       });
@@ -109,29 +112,51 @@ class _GameplayPageState extends State<GameplayPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'action buttons here',
-          style: TextStyle(color: Colors.white),
+        centerTitle: true,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: padding),
+          child: IconButton(
+            icon: const Icon(Icons.arrow_back, size: 35.0),
+            tooltip: 'Go back',
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
-        backgroundColor: Colors.pink,
+        title: Text(
+          'LEVEL ${widget.level}',
+          style: Theme.of(context).textTheme.headlineLarge,
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: padding),
+            child: IconButton(
+              icon: const Icon(Icons.refresh, size: 35.0),
+              tooltip: 'Replay game',
+              onPressed: () {
+                initBoard(widget.level);
+                setState(() {
+                  _gameDone = false;
+                });
+              },
+            ),
+          ),
+        ],
       ),
-      body: Container(
+      body: SizedBox(
         height: double.infinity,
-        color: Colors.cyan,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Expanded(
-              child: !_gameDone ? const SizedBox.shrink() : Center(
-                child: Text(
-                  _board.checkGameStatus() ? "You won!" : "You lose!",
-                  style: const TextStyle(
-                    fontSize: 60,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.yellowAccent,
-                  ),
-                ),
-              ),
+              child: !_gameDone
+                  ? const SizedBox.shrink()
+                  : Center(
+                      child: Text(
+                        _board.checkGameStatus() ? "YOU WIN!" : "YOU LOSE!",
+                        style: Theme.of(context).textTheme.headline3,
+                      ),
+                    ),
             ),
             Expanded(
               flex: 2,

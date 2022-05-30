@@ -8,7 +8,6 @@ class GameBoard {
   final int _length;
   final List _boardList;
 
-
   GameBoard(this._level, this._columns, this._length, this._boardList);
 
   int get level => _level;
