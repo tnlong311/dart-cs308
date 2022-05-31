@@ -2,12 +2,23 @@
 
 A final project using Flutter
 
-# On-going progress
+# Project Demo
 
-Last updated: 16th May 2022
+Last updated: 31st May 2022
 
-- Gameplay UI, game board inported from .json file:
-<img src="https://user-images.githubusercontent.com/69509154/168489703-1f52d08b-fa26-4e94-aae7-7b4472c8b424.png" alt="pic1" width="300"/>
+## Start screen:
+<img src="https://user-images.githubusercontent.com/69509154/171111138-e09c558c-3538-47f1-a28f-c09e35873d60.png" alt="pic1" width="300"/>
 
-- Simple interaction, on tap will switch the node color (either black or white). See Node 10:
-<img src="https://user-images.githubusercontent.com/69509154/168489738-8d1cb5f5-ac3e-4f5e-b7f7-cb220018f570.png" alt="pic1" width="300"/>
+## Gameplay UI, game board inported from .json file:
+<img src="https://user-images.githubusercontent.com/69509154/171111354-00615c2a-d36b-4d10-b984-a617fb945f13.png" width="300"/>
+
+- Game win (all node in the first row is selected):
+<img src="https://user-images.githubusercontent.com/69509154/171111463-790eddf2-f65e-4063-a889-4c11156de58b.png" width="300"/>
+
+- Game lose (all node in the second row is selected):
+<img src="https://user-images.githubusercontent.com/69509154/171111472-350c6af9-6157-48eb-ae34-0d91330bb5e6.png" width="300"/>
+
+- Another level screen:
+<img src="https://user-images.githubusercontent.com/69509154/171111586-f036f12b-dcf5-4ba6-a30d-9537f89cd04e.png" width="300"/>
+
+
