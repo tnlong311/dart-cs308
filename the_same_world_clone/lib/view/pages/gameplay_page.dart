@@ -59,7 +59,7 @@ class _GameplayPageState extends State<GameplayPage> {
         /// temporary variable so that the [is] allows access of [index]
         final target = hit.target;
 
-        if (target is _MultiSelectWidget) {
+        if (target is _MultiSelectWidget && !_gameDone) {
           if (!_trackTaped.contains(target)) {
             _trackTaped.add(target);
             _selectIndex(target.index);
