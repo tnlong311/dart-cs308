@@ -170,7 +170,7 @@ double num3 = 1.0;
 print('num3 = $num3'); // num3 = 1.0
 ```
 
-1. add `int` and `String`
+2. add `int` and `String`
 
 Dart is strongly bound to type assignment. Thus, adding an `int` to a `String` will cause error:
 
@@ -180,7 +180,7 @@ var x = num4 + "hello";
 print("x: $x"); // illegal
 ```
 
-1. division
+3. division
 
 Though one `int` is divisable to another `int`, the result is still converted to `double`:
 
@@ -196,7 +196,7 @@ If we try to force cast the division to `int`, it will generate an error *“A v
 int num7 = num6 / num5; //illegal
 ```
 
-1. put different data types in the same list
+4. put different data types in the same list
 
 This is still allowed if we do not assigned a specific type to list element:
 
@@ -211,7 +211,7 @@ Else, this will generate an error:
 List<int> list2 = [1, 2, 'hello', 'world']; //illegal
 ```
 
-1. cast data type
+5. cast data type
 
 As described above, we cannot change the data type after a variable is initialized. 
 
